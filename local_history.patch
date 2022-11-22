@@ -1,0 +1,16 @@
+Index: app/src/main/res/values-night/themes.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values-night/themes.xml b/app/src/main/res/values-night/themes.xml
+--- a/app/src/main/res/values-night/themes.xml	
++++ b/app/src/main/res/values-night/themes.xml	(date 1669140133994)
+@@ -1,6 +1,6 @@
+ <resources xmlns:tools="http://schemas.android.com/tools">
+     <!-- Base application theme. -->
+-    <style name="Theme.Colemark" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
++    <style name="Theme.Colemark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+         <!-- Primary brand color. -->
+         <item name="colorPrimary">@color/purple_200</item>
+         <item name="colorPrimaryVariant">@color/purple_700</item>

@@ -1,0 +1,24 @@
+R_DEF: Internal format may change without notice
+local
+color Button
+color background
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color text
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id container
+id main
+layout activity_main
+layout fragment_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Theme.Colemark
+xml backup_rules
+xml data_extraction_rules

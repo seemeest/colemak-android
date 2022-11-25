@@ -15,11 +15,16 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable pole
 id container
+id editTextName
+id editTextNumberPassword
+id editTextTextPassword
+id editTextTextPersonName2
 id main
 layout activity_main
 layout fragment_main
 mipmap ic_launcher
 mipmap ic_launcher_round
+string Nema
 string app_name
 style Theme.Colemark
 xml backup_rules

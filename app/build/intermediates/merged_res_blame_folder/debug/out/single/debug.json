@@ -24,16 +24,16 @@
         "source": "C:\\Users\\galuz\\.gradle\\daemon\\7.4\\com.example.colemark.app-main-35:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.colemark.app-merged_res-33:/layout_fragment_main.xml.flat",
-        "source": "com.example.colemark.app-main-35:/layout/fragment_main.xml"
-    },
-    {
         "merged": "C:\\Users\\galuz\\.gradle\\daemon\\7.4\\com.example.colemark.app-merged_res-33:\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\galuz\\.gradle\\daemon\\7.4\\com.example.colemark.app-main-35:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\galuz\\.gradle\\daemon\\7.4\\com.example.colemark.app-merged_res-33:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\galuz\\.gradle\\daemon\\7.4\\com.example.colemark.app-main-35:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\galuz\\.gradle\\daemon\\7.4\\com.example.colemark.app-merged_res-33:\\drawable-anydpi-v24_back.xml.flat",
+        "source": "C:\\Users\\galuz\\.gradle\\daemon\\7.4\\com.example.colemark.app-pngs-28:\\drawable-anydpi-v24\\back.xml"
     },
     {
         "merged": "C:\\Users\\galuz\\.gradle\\daemon\\7.4\\com.example.colemark.app-merged_res-33:\\drawable_ic_launcher_background.xml.flat",
@@ -56,8 +56,16 @@
         "source": "C:\\Users\\galuz\\.gradle\\daemon\\7.4\\com.example.colemark.app-main-35:\\layout\\fragment_main.xml"
     },
     {
+        "merged": "com.example.colemark.app-merged_res-33:/layout_activity_main.xml.flat",
+        "source": "com.example.colemark.app-main-35:/layout/activity_main.xml"
+    },
+    {
         "merged": "C:\\Users\\galuz\\.gradle\\daemon\\7.4\\com.example.colemark.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\galuz\\.gradle\\daemon\\7.4\\com.example.colemark.app-main-35:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.colemark.app-merged_res-33:/drawable-anydpi-v24_pole.xml.flat",
+        "source": "com.example.colemark.app-pngs-28:/drawable-anydpi-v24/pole.xml"
     },
     {
         "merged": "C:\\Users\\galuz\\.gradle\\daemon\\7.4\\com.example.colemark.app-merged_res-33:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",

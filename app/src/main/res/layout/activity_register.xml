@@ -15,10 +15,10 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="263dp"
-        android:layout_marginEnd="51dp"
-        android:layout_marginBottom="147dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="217dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="195dp"
         android:background="#FFFFFF" />
 
     <ImageView
@@ -188,11 +188,11 @@
         android:layout_width="wrap_content"
         android:layout_height="18dp"
         android:layout_alignStart="@+id/fon"
+        android:layout_alignTop="@+id/fon"
         android:layout_alignEnd="@+id/fon"
-        android:layout_alignBottom="@+id/fon"
         android:layout_marginStart="62dp"
+        android:layout_marginTop="348dp"
         android:layout_marginEnd="65dp"
-        android:layout_marginBottom="42dp"
         android:background="@color/background"
         android:contentDescription="@string/vhod"
         android:gravity="center"
@@ -208,28 +208,26 @@
         android:layout_width="wrap_content"
         android:layout_height="18dp"
         android:layout_alignStart="@+id/fon"
+        android:layout_alignTop="@+id/fon"
         android:layout_alignEnd="@+id/fon"
-        android:layout_alignBottom="@+id/fon"
         android:layout_marginStart="60dp"
+        android:layout_marginTop="380dp"
         android:layout_marginEnd="67dp"
-        android:layout_marginBottom="10dp"
         android:background="@color/white"
         android:contentDescription="@string/vhod"
+        android:gravity="center"
         android:text="Есть аккаунт? Войти"
         android:textColor="#DD2C00"
         android:textColorHint="@color/white"
         android:textSize="12sp"
-        android:gravity="center"
         tools:ignore="TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/fon"
-        android:layout_alignBottom="@+id/registerButton"
-        android:layout_marginStart="-63dp"
-        android:layout_marginBottom="-9dp"
+        android:layout_alignBottom="@+id/fon"
+        android:layout_marginBottom="2dp"
         app:srcCompat="@drawable/vhod_______1" />
 
     <ImageView

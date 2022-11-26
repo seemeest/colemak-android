@@ -65,30 +65,6 @@
         android:layout_marginBottom="293dp"
         app:srcCompat="@drawable/vhod_______7" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/fon"
-        android:layout_alignEnd="@+id/fon"
-        android:layout_alignBottom="@+id/fon"
-        android:layout_marginStart="49dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="222dp"
-        app:srcCompat="@drawable/vhod_______10" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/fon"
-        android:layout_alignEnd="@+id/fon"
-        android:layout_alignBottom="@+id/fon"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="51dp"
-        android:layout_marginBottom="150dp"
-        app:srcCompat="@drawable/vhod_______10" />
-
     <ImageButton
         android:id="@+id/imageButton4"
         android:layout_width="179dp"
@@ -104,16 +80,35 @@
         app:srcCompat="@drawable/vhod_______4" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/editTextTextEmailAddress3"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_above="@+id/imageButton4"
+        android:layout_alignStart="@+id/fon"
+        android:layout_alignEnd="@+id/fon"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="100dp"
+        android:background="@color/background"
+        android:ems="10"
+        android:hint="Почта"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/imageView6"
-        android:layout_alignEnd="@+id/imageView6"
-        android:layout_alignBottom="@+id/imageView7"
-        android:layout_marginStart="13dp"
-        android:layout_marginEnd="9dp"
-        android:layout_marginBottom="71dp"
+        android:layout_above="@+id/imageButton4"
+        android:layout_alignStart="@+id/fon"
+        android:layout_alignEnd="@+id/fon"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/background"
         android:ems="10"
-        android:inputType="textEmailAddress" />
+        android:inputType="textPassword"
+        android:hint="Пароль"
+        android:minHeight="48dp" />
 
 </RelativeLayout>

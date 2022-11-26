@@ -5,56 +5,115 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back"
-    tools:context=".MainActivity" >
+    android:background="@color/background"
+    tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <ImageView
+        android:id="@+id/fon"
+        android:layout_width="wrap_content"
+        android:layout_height="433dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="0dp"
-        android:background="@drawable/pole">
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="171dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="83dp"
+        android:background="#FFFFFF" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="76dp"
-            android:layout_marginTop="236dp"
-            android:layout_marginEnd="103dp"
-            android:layout_marginBottom="15dp"
-            android:background="@null"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:text="Name" />
+    <ImageView
+        android:id="@+id/ElochkaL"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fon"
+        android:layout_marginTop="166dp"
+        android:layout_marginBottom="-9dp"
+        app:srcCompat="@drawable/vhod_______1" />
 
-        <EditText
-            android:id="@+id/editTextNumberPassword"
-            android:layout_width="wrap_content"
-            android:background="@null"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="84dp"
-            android:layout_marginTop="295dp"
-            android:layout_marginEnd="117dp"
-            android:layout_marginBottom="315dp"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:minHeight="48dp"
-            tools:ignore="SpeakableTextPresentCheck" />
+    <ImageView
+        android:id="@+id/ElochkaR"
+        android:layout_width="143dp"
+        android:layout_height="215dp"
+        android:layout_alignEnd="@+id/fon"
+        android:layout_alignBottom="@+id/fon"
+        android:layout_marginEnd="-67dp"
+        android:layout_marginBottom="-5dp"
+        app:srcCompat="@drawable/vhod_______2" />
 
-    </RelativeLayout>
+    <ImageView
+        android:id="@+id/SankiTop"
+        android:layout_width="247dp"
+        android:layout_height="166dp"
+        android:layout_alignStart="@+id/fon"
+        android:layout_alignTop="@+id/fon"
+        android:layout_marginStart="-57dp"
+        android:layout_marginTop="-64dp"
+        app:srcCompat="@drawable/vhod_______6" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/fon"
+        android:layout_alignTop="@+id/fon"
+        android:layout_alignEnd="@+id/fon"
+        android:layout_alignBottom="@+id/fon"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="293dp"
+        app:srcCompat="@drawable/vhod_______7" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/fon"
+        android:layout_alignEnd="@+id/fon"
+        android:layout_alignBottom="@+id/fon"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="222dp"
+        app:srcCompat="@drawable/vhod_______10" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/fon"
+        android:layout_alignEnd="@+id/fon"
+        android:layout_alignBottom="@+id/fon"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="150dp"
+        app:srcCompat="@drawable/vhod_______10" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="179dp"
+        android:layout_height="53dp"
+        android:layout_alignStart="@+id/fon"
+        android:layout_alignEnd="@+id/fon"
+        android:layout_alignBottom="@+id/fon"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="75dp"
+        android:background="@color/white"
+        android:contentDescription="@string/vhod"
+        app:srcCompat="@drawable/vhod_______4" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView6"
+        android:layout_alignEnd="@+id/imageView6"
+        android:layout_alignBottom="@+id/imageView7"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="71dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
 </RelativeLayout>

@@ -1,7 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Colemark</string>
-    <string name="Nema">TextView</string>
-    <string name="elochka1">elochka1</string>
     <string name="vhod">vhod</string>
     <string name="buttonRegisterMain">buttonRegisterMain</string>
     <string name="poleEmail">poleEmail</string>

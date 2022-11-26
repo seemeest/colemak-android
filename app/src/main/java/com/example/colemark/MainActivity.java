@@ -11,8 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-      EditText name = findViewById(R.id.editTextTextPersonName2);
-    EditText  pass = findViewById(R.id.editTextNumberPassword);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

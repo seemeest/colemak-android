@@ -4,6 +4,7 @@ import com.loopj.android.http.*;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -11,15 +12,13 @@ import android.widget.EditText;
 import com.example.colemark.ui.main.MainFragment;
 
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageButton;
-import android.widget.TextView;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.concurrent.atomic.AtomicReference;
+
 import cz.msebera.android.httpclient.Header;
-import cz.msebera.android.httpclient.entity.StringEntity;
 
 public class MainActivity extends AppCompatActivity {
     @SuppressLint("StaticFieldLeak")
@@ -28,6 +27,10 @@ public class MainActivity extends AppCompatActivity {
     static EditText password;
     @SuppressLint("StaticFieldLeak")
     static Button loginButton;
+    @SuppressLint("StaticFieldLeak")
+    static Button registerButton;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,13 +38,27 @@ public class MainActivity extends AppCompatActivity {
         email=findViewById(R.id.loginEmail);
         password=findViewById(R.id.loginPassword);
         loginButton=findViewById(R.id.loginButton);
+        registerButton=findViewById(R.id.registerButton);
+        SharedPreferences mPrefs = getSharedPreferences("settings", 0);
+        AtomicReference<String> mString = new AtomicReference<>(mPrefs.getString("token", ""));
+        if (!mString.equals("")){
+            // menu
+            // setContentView(R.layout.activity_menu);
+        }
+
+        registerButton.setOnClickListener(v -> {
+//          example of getting token
+//            mString.set(mPrefs.getString("token", ""));
+//            System.out.println(mString.get());
+             setContentView(R.layout.activity_register);
+        });
 
         loginButton.setOnClickListener(v -> {
             String email=MainActivity.email.getText().toString().trim();
             String password=MainActivity.password.getText().toString().trim();
             if (email.equals("") || password.equals("")){
                 // here error
-                return;
+                MainActivity.registerButton.setVisibility(View.VISIBLE);
             }
             RequestParams params = new RequestParams();
             params.put("email",email);
@@ -56,18 +73,22 @@ public class MainActivity extends AppCompatActivity {
                     if (statusCode==200){
                         try {
                             response=new JSONObject((new String(responseBody)));
-                        } catch (JSONException e) {
-                            e.printStackTrace();
+                        } catch (JSONException ignored) {
+
                         }
+                        String token= "";
                         try {
-                            System.out.println(response.get("token"));
+                            token=response.get("token").toString();
+
                         } catch (Exception ignored){
 
                         }
-
+                        SharedPreferences mPrefs = getSharedPreferences("settings", 0);
+                        SharedPreferences.Editor mEditor = mPrefs.edit();
+                        mEditor.putString("token", token).apply();
 
                     } else {
-
+                        MainActivity.registerButton.setVisibility(View.VISIBLE);
                     }
 
 
@@ -76,14 +97,11 @@ public class MainActivity extends AppCompatActivity {
 
                 @Override
                 public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                    // print error with network
-                    // System.out.println(error.toString()+"\n"+(new String(responseBody)).toString());
+                    MainActivity.registerButton.setVisibility(View.VISIBLE);
                 }
 
 //
             });
-
-            System.out.println("TEST");
         });
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()

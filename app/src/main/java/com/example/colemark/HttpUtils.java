@@ -27,7 +27,6 @@ public class HttpUtils {
     }
 
     private static String getAbsoluteUrl(String relativeUrl) {
-        System.out.println(BASE_URL + relativeUrl);
         return BASE_URL + relativeUrl;
     }
 }

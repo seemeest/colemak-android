@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/fon"
+        android:layout_width="wrap_content"
+        android:layout_height="417dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="181dp"
+        android:background="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="164dp"
+        android:layout_height="86dp"
+        android:layout_alignStart="@+id/fon"
+        android:layout_alignTop="@+id/fon"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="-8dp"
+        app:srcCompat="@drawable/reg_______17" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="157dp"
+        android:layout_height="34dp"
+        android:layout_alignStart="@+id/fon"
+        android:layout_alignTop="@+id/fon"
+        android:layout_alignEnd="@+id/fon"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="70dp"
+        app:srcCompat="@drawable/reg_______15" />
+
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="137dp"
+        android:layout_height="19dp"
+        android:layout_alignStart="@+id/fon"
+        android:layout_alignTop="@+id/fon"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginBottom="100dp"
+        android:background="@color/background"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Имя"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/SurName"
+        android:layout_width="137dp"
+        android:layout_height="19dp"
+        android:layout_alignTop="@+id/fon"
+        android:layout_alignEnd="@+id/fon"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="100dp"
+        android:background="@color/background"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Фамилия"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/RegisterEmail"
+        android:layout_width="249dp"
+        android:layout_height="18dp"
+        android:layout_alignStart="@+id/fon"
+        android:layout_alignTop="@+id/fon"
+        android:layout_alignEnd="@+id/fon"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="191dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="100dp"
+        android:background="@color/background"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Почта"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="213dp"
+        android:layout_height="24dp"
+        android:layout_alignStart="@+id/fon"
+        android:layout_alignEnd="@+id/fon"
+        android:layout_alignBottom="@+id/fon"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="220dp"
+        android:text="Придумайте пароль"
+        android:textColor="@color/background"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="213dp"
+        android:layout_height="24dp"
+        android:layout_alignStart="@+id/fon"
+        android:layout_alignEnd="@+id/fon"
+        android:layout_alignBottom="@+id/fon"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="172dp"
+        android:text="Введите пароль"
+        android:textColor="@color/background"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="213dp"
+        android:layout_height="24dp"
+        android:layout_alignStart="@+id/fon"
+        android:layout_alignEnd="@+id/fon"
+        android:layout_alignBottom="@+id/fon"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="130dp"
+        android:text="Повторите пароль"
+        android:textColor="@color/background"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/RegisterPassword1"
+        android:layout_width="137dp"
+        android:layout_height="19dp"
+        android:layout_alignStart="@+id/fon"
+        android:layout_alignTop="@+id/fon"
+        android:layout_alignEnd="@+id/fon"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="305dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="100dp"
+        android:background="@color/background"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/registerPassword2"
+        android:layout_width="137dp"
+        android:layout_height="19dp"
+        android:layout_alignStart="@+id/fon"
+        android:layout_alignTop="@+id/fon"
+        android:layout_alignEnd="@+id/fon"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="100dp"
+        android:background="@color/background"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Zaregister"
+
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_alignStart="@+id/fon"
+        android:layout_alignEnd="@+id/fon"
+        android:layout_alignBottom="@+id/fon"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="42dp"
+        android:background="@color/background"
+        android:contentDescription="@string/vhod"
+        android:gravity="center"
+        android:text="Зарегистрироваться"
+        android:textColor="#ffffff"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registerButton"
+
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_alignStart="@+id/fon"
+        android:layout_alignEnd="@+id/fon"
+        android:layout_alignBottom="@+id/fon"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:contentDescription="@string/vhod"
+        android:text="Есть аккаунт? Войти"
+        android:textColor="#DD2C00"
+        android:textColorHint="@color/white"
+        android:textSize="12sp"
+        android:gravity="center"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/fon"
+        android:layout_alignBottom="@+id/registerButton"
+        android:layout_marginStart="-63dp"
+        android:layout_marginBottom="-9dp"
+        app:srcCompat="@drawable/vhod_______1" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="119dp"
+        android:layout_height="206dp"
+        android:layout_alignEnd="@+id/fon"
+        android:layout_alignBottom="@+id/fon"
+        android:layout_marginEnd="-60dp"
+        android:layout_marginBottom="-21dp"
+        app:srcCompat="@drawable/reg_______3" />
+
+
+</RelativeLayout>

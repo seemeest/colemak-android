@@ -4,6 +4,7 @@ import com.loopj.android.http.*;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -35,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        email=findViewById(R.id.loginEmail);
-        password=findViewById(R.id.loginPassword);
-        loginButton=findViewById(R.id.loginButton);
-        registerButton=findViewById(R.id.registerButton);
+        email=findViewById(R.id.loginLoginEmail);
+        password=findViewById(R.id.loginLoginPassword);
+        loginButton=findViewById(R.id.loginLoginButton);
+        registerButton=findViewById(R.id.registerLoginButton);
         SharedPreferences mPrefs = getSharedPreferences("settings", 0);
         AtomicReference<String> mString = new AtomicReference<>(mPrefs.getString("token", ""));
         if (!mString.equals("")){
@@ -50,7 +51,11 @@ public class MainActivity extends AppCompatActivity {
 //          example of getting token
 //            mString.set(mPrefs.getString("token", ""));
 //            System.out.println(mString.get());
-             setContentView(R.layout.activity_register);
+            Intent intentMain = new Intent(MainActivity.this ,
+                    RegisterActivity.class);
+
+            MainActivity.this.startActivity(intentMain);
+             //setContentView(R.layout.activity_register);
         });
 
         loginButton.setOnClickListener(v -> {

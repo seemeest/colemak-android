@@ -22,7 +22,7 @@ import cz.msebera.android.httpclient.Header;
 public class MainActivity extends AppCompatActivity {
     static EditText email;
     static EditText password;
-    static ImageButton loginButton;
+    static Button loginButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

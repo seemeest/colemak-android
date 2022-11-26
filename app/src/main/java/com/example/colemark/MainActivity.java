@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String email=MainActivity.email.getText().toString().trim();
                 String password=MainActivity.password.getText().toString().trim();
-                if (email.trim()=="" || password==""){
+                if (email=="" || password==""){
                     // here error
                     return;
                 }
@@ -48,8 +48,21 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                         // checks
+                        JSONObject response=new JSONObject();
+                        if (statusCode==200){
+                            try {
+                                response=new JSONObject((new String(responseBody)).toString());
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
 
-                        System.out.println((new String(responseBody)).toString());
+
+                        } else {
+
+                        }
+
+
+
                     }
 
                     @Override

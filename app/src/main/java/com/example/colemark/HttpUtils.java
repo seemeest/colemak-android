@@ -6,7 +6,7 @@ import com.loopj.android.http.RequestParams;
 
 public class HttpUtils {
 
-    private static String BASE_URL="http://api.nikitysikw.keenetic.pro:80/api/";//;
+    private static String BASE_URL="https://235c-95-174-102-182.eu.ngrok.io/api/";//;
 
     private static AsyncHttpClient client = new AsyncHttpClient();
 

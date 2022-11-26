@@ -5,4 +5,8 @@
     <string name="vhod">vhod</string>
     <string name="buttonRegisterMain">buttonRegisterMain</string>
     <string name="poleEmail">poleEmail</string>
+
+
+
+    <string name="token"></string>
 </resources>

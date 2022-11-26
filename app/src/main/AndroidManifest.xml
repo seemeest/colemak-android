@@ -18,7 +18,7 @@
             android:name=".RegisterActivity"
             android:exported="false"
             android:label="@string/title_activity_register"
-            android:theme="@style/Theme.Colemark.NoActionBar">
+            >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

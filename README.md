@@ -1,2 +1,2 @@
 # colemak
-убрал хуйню сверху
+Implamentation on Android( Beta )

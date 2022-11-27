@@ -8,7 +8,7 @@ public class HttpUtils {
 
     private static final String BASE_URL="https://d00e-95-174-102-182.eu.ngrok.io/api/";//;
 
-    private static final AsyncHttpClient client = new AsyncHttpClient();
+    public static final AsyncHttpClient client = new AsyncHttpClient();
 
     public static void get(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
         client.get(getAbsoluteUrl(url), params, responseHandler);

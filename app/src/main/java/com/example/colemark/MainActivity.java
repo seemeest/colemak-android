@@ -42,9 +42,12 @@ public class MainActivity extends AppCompatActivity {
         registerButton=findViewById(R.id.registerLoginButton);
         SharedPreferences mPrefs = getSharedPreferences("settings", 0);
         AtomicReference<String> mString = new AtomicReference<>(mPrefs.getString("token", ""));
-        if (!mString.equals("")){
+        if (!mString.get().equals("")){
             // menu
-            // setContentView(R.layout.activity_menu);
+            Intent intentMain = new Intent(MainActivity.this ,
+                    ProfileActivity.class);
+
+            MainActivity.this.startActivity(intentMain);
         }
 
         registerButton.setOnClickListener(v -> {
@@ -91,6 +94,10 @@ public class MainActivity extends AppCompatActivity {
                         SharedPreferences mPrefs = getSharedPreferences("settings", 0);
                         SharedPreferences.Editor mEditor = mPrefs.edit();
                         mEditor.putString("token", token).apply();
+                        Intent intentMain = new Intent(MainActivity.this ,
+                                ProfileActivity.class);
+
+                        MainActivity.this.startActivity(intentMain);
 
                     } else {
                         MainActivity.registerButton.setVisibility(View.VISIBLE);

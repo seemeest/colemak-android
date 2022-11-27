@@ -90,6 +90,11 @@ public class RegisterActivity extends AppCompatActivity {
                             SharedPreferences mPrefs = getSharedPreferences("settings", 0);
                             SharedPreferences.Editor mEditor = mPrefs.edit();
                             mEditor.putString("token", token).apply();
+                            Intent intentMain = new Intent(RegisterActivity.this ,
+                                    ProfileActivity.class);
+
+                            RegisterActivity.this.startActivity(intentMain);
+
 
                         } else {
                             RegisterActivity.wrongData.setVisibility(View.VISIBLE);

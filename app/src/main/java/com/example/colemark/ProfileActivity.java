@@ -2,6 +2,7 @@ package com.example.colemark;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -19,7 +20,9 @@ import cz.msebera.android.httpclient.Header;
 
 public class ProfileActivity extends AppCompatActivity {
     String token;
+    @SuppressLint("StaticFieldLeak")
     static TextView name;
+    @SuppressLint("StaticFieldLeak")
     static TextView surName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
